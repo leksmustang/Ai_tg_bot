@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Файлы с токенами и секретами
+.env
+*.env
+*.key
+*.pem
+
+# Базы данных (SQLite)
+*.db
+*.sqlite3
+
+# Логи
+*.log
+
+# Временные файлы
+temp_*
+*.tmp
+
+# Другие служебные
+.DS_Store
+Thumbs.db
