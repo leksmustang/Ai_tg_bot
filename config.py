@@ -14,13 +14,13 @@ REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
 # microsoft/phi-3-mini-128k-instruct:free, mistralai/mistral-7b-instruct:free
 TEXT_MODEL = os.getenv("TEXT_MODEL", "deepseek/deepseek-chat:free")
 
-# Модель для vision (используется в некоторых местах, но не принципиально)
+# Модель для vision
 VISION_MODEL = os.getenv("VISION_MODEL", "google/gemini-2.0-flash-lite-preview-02-05:free")
 
 # Модели для генерации изображений (Hugging Face)
 IMAGE_MODEL = os.getenv("IMAGE_MODEL", "black-forest-labs/FLUX.1-schnell")
 
-# Специфические vision-модели для анализа изображений/PDF (используются в vision_analyzer.py)
+# Специфические vision-модели для анализа изображений/PDF 
 VISION_MODEL_GEMINI = os.getenv("VISION_MODEL_GEMINI", "google/gemini-2.0-flash-lite-preview-02-05:free")
 VISION_MODEL_NEMOTRON = os.getenv("VISION_MODEL_NEMOTRON", "nvidia/nemotron-nano-12b-v2-vl:free")
 
@@ -29,7 +29,7 @@ ADMINS = [int(x.strip()) for x in os.getenv("ADMINS", "").split(",") if x.strip(
 ADMIN_CONTACT = os.getenv("ADMIN_CONTACT", "@admin")
 POPPLER_PATH = os.getenv("POPPLER_PATH", None)
 
-# Системные промпты (без изменений)
+# Системные промпты 
 STRICT_PROMPT = (
     "Ты — строгий, точный и лаконичный ассистент. Твои ответы должны быть:\n"
     "- чёткими, по делу, без лишних слов и эмоций\n"
